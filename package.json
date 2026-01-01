@@ -6,10 +6,14 @@
   "type": "module",
   "workspaces": [
     "services/*",
-    "packages/*"
+    "packages/*",
+    "website/*"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=@jubilee/sso",
+    "dev:website": "npm run dev --workspace=@jubilee/website-backend & npm run dev --workspace=@jubilee/website-frontend",
+    "dev:backend": "npm run dev --workspace=@jubilee/website-backend",
+    "dev:frontend": "npm run dev --workspace=@jubilee/website-frontend",
     "build": "npm run build --workspaces",
     "test": "npm run test --workspaces",
     "test:coverage": "npm run test:coverage --workspaces",
@@ -21,6 +25,8 @@
     "migrate:create": "npm run migrate:create --workspace=@jubilee/sso",
     "migrate:rollback": "npm run migrate:rollback --workspace=@jubilee/sso",
     "seed:dev": "npm run seed:dev --workspace=@jubilee/sso",
+    "seed:tlds": "npm run seed:tlds --workspace=@jubilee/website-backend",
+    "migrate:website": "npm run migrate --workspace=@jubilee/website-backend",
     "clean": "npm run clean --workspaces",
     "docker:dev": "docker-compose -f infra/docker/docker-compose.dev.yml up -d",
     "docker:down": "docker-compose -f infra/docker/docker-compose.dev.yml down"
