@@ -143,7 +143,7 @@ class ApiClient {
     });
   }
 
-  // Resolve (for Jubilee Browser)
+  // Resolve (for CelestialPaths Browser)
   async resolveDomain(fullDomain: string) {
     return this.fetch(`/api/domains/resolve/${encodeURIComponent(fullDomain)}`);
   }

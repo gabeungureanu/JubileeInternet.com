@@ -41,6 +41,109 @@ async function main(): Promise<void> {
   app.route('/api/domains', domains);
   app.route('/webhooks', webhooks);
 
+  // Root endpoint - HTML welcome page
+  app.get('/', (c) => {
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jubilee Internet Portal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, #e94560, #f39c12);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      color: #a0a0a0;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .description {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #e94560;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: transform 0.2s, background 0.2s;
+    }
+    a:hover {
+      background: #d63850;
+      transform: translateY(-2px);
+    }
+    a.secondary {
+      background: transparent;
+      border: 2px solid #e94560;
+    }
+    a.secondary:hover {
+      background: #e94560;
+    }
+    .note {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #a0a0a0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jubilee Internet Portal</h1>
+    <p class="subtitle">SSO & Domain Registry</p>
+    <p class="description">
+      Welcome to the Jubilee Internet Portal. This is the central authentication
+      and domain registration service for the Jubilee ecosystem, including
+      Jubilee Browser, Jubilee Bible, and JubileeVerse.
+    </p>
+    <div class="links">
+      <a href="http://localhost:3002">Open Portal</a>
+      <a href="/api" class="secondary">API Documentation</a>
+      <a href="/health" class="secondary">Health Check</a>
+    </div>
+    <p class="note">
+      This backend API server is running. For the full web experience,
+      visit the frontend at <a href="http://localhost:3002" style="background:none;padding:0;color:#e94560;">localhost:3002</a>
+    </p>
+  </div>
+</body>
+</html>`;
+    return c.html(html);
+  });
+
   // API info
   app.get('/api', (c) => {
     return c.json({

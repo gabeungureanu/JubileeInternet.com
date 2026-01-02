@@ -236,7 +236,7 @@ export default function DashboardPage() {
               <Globe className="h-16 w-16 text-gray-300 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">No domains yet</h3>
               <p className="text-gray-500 mb-6">
-                Register your first Jubilee Internet domain to get started.
+                Register your first Inspire Web Space to get started.
               </p>
               <Link href="/domains" className="btn-primary">
                 <Plus className="h-4 w-4 mr-2" />

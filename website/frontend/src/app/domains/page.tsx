@@ -86,11 +86,11 @@ export default function DomainsPage() {
         <section className="py-12 px-4 bg-gradient-to-b from-jubilee-50 to-white">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Register Your Jubilee Internet Domain
+              Register Your Inspire Web Space
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Search for your perfect domain name and establish your presence
-              in the Jubilee Internet ecosystem.
+              on the Jubilee Private Internet.
             </p>
           </div>
         </section>
