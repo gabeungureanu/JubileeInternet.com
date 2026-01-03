@@ -101,7 +101,7 @@ domains.get('/resolve/:fullDomain', optionalAuthMiddleware, async (c) => {
     return c.json({
       exists: false,
       error: 'unknown_tld',
-      message: `The .${tldName} domain is not a valid Jubilee Internet TLD`,
+      message: `The .${tldName} is not a valid Inspire Web Space TLD`,
     }, 404);
   }
 
@@ -122,7 +122,7 @@ domains.get('/resolve/:fullDomain', optionalAuthMiddleware, async (c) => {
       exists: false,
       fullDomain,
       tld: tldName,
-      message: 'This domain is not registered on Jubilee Internet',
+      message: 'This web space is not registered on Inspire Web Spaces',
     });
   }
 

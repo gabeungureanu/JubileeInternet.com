@@ -406,7 +406,7 @@ export default function AboutPage() {
         <section className="py-20 px-4 bg-jubilee-900 text-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Join the Jubilee Private Internet?
+              Ready to Join Inspire Web Spaces?
             </h2>
             <p className="text-xl text-jubilee-200 mb-8">
               Register your Inspire Web Space and become part of the worldwide Bible web.

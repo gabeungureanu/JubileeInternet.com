@@ -1,9 +1,9 @@
-// Content constants for Jubilee Private Internet Portal
+// Content constants for Inspire Web Spaces Portal
 // All text content is centralized here for easy updates
 
-export const SITE_NAME = 'Jubilee Private Internet';
-export const SITE_SHORT_NAME = 'JPI';
-export const SITE_DOMAIN = 'JubileeInternet.com';
+export const SITE_NAME = 'Inspire Web Spaces';
+export const SITE_SHORT_NAME = 'IWS';
+export const SITE_DOMAIN = 'InspireWebSpaces.com';
 export const SITE_TAGLINE = 'A new Worldwide Bible Web for faith-based communities';
 export const SITE_TAGLINE_EXTENDED = 'A faith-aligned, private internet architecture for trust, safety, and purpose';
 
@@ -355,7 +355,7 @@ export const BENEFITS = [
 
 export const SSO_SERVICES = {
   title: 'Your Gateway to the Jubilee Ecosystem',
-  description: 'JubileeInternet.com is the central identity and services portal for the Jubilee Private Internet. One account gives you access to everything.',
+  description: 'InspireWebSpaces.com is the central identity and services portal for the Jubilee Private Internet. One account gives you access to everything.',
   services: [
     {
       name: 'Jubilee Browser',
@@ -437,7 +437,7 @@ export const FOOTER_CONTENT = {
     },
   ],
   legal: {
-    copyright: '2025 Jubilee Private Internet. All rights reserved.',
+    copyright: '2025 Inspire Web Spaces. All rights reserved.',
     notice: 'Inspire Web Spaces are private and accessible only through Jubilee Browser. JPI operates alongside—not in place of—the public internet.',
   },
 };

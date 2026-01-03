@@ -1,7 +1,7 @@
 {
-  "name": "@jubilee/website-backend",
+  "name": "@inspire/website-backend",
   "version": "0.1.0",
-  "description": "Jubilee Internet Portal - SSO & Domain Registry Backend",
+  "description": "Inspire Web Spaces Portal - SSO & Web Space Registry Backend",
   "private": true,
   "type": "module",
   "engines": {

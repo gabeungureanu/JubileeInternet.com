@@ -1,13 +1,13 @@
-# Jubilee Internet Portal
+# Inspire Web Spaces Portal
 
-The central SSO portal and domain registry for the Jubilee Internet ecosystem.
+The central SSO portal and web space registry for the Jubilee Private Internet ecosystem.
 
 ## Overview
 
 This website serves a dual, tightly integrated purpose:
 
 1. **SSO Portal** — Central authentication for all Jubilee services (Browser, Bible, JubileeVerse, etc.)
-2. **Domain Registry** — Registration and management of private Jubilee Internet domains
+2. **Web Space Registry** — Registration and management of private Inspire Web Spaces
 
 ## Architecture
 
@@ -32,11 +32,11 @@ website/
 
 ## Important: Private Network
 
-**Jubilee Internet domains are NOT part of the public Internet.**
+**Inspire Web Spaces are NOT part of the public Internet.**
 
 - They do not exist in ICANN or public DNS
 - They are resolved exclusively by Jubilee Browser
-- They represent spaces within the Jubilee network only
+- They represent spaces within the Jubilee Private Internet only
 
 ## Supported TLDs
 

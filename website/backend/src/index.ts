@@ -13,7 +13,7 @@ async function main(): Promise<void> {
   loadConfig();
   const config = getConfig();
 
-  console.log('Starting Jubilee Website Backend...');
+  console.log('Starting Inspire Web Spaces Backend...');
 
   // Initialize database connection
   getDatabase();
@@ -48,7 +48,7 @@ async function main(): Promise<void> {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jubilee Internet Portal</title>
+  <title>Inspire Web Spaces Portal</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -122,11 +122,11 @@ async function main(): Promise<void> {
 </head>
 <body>
   <div class="container">
-    <h1>Jubilee Internet Portal</h1>
-    <p class="subtitle">SSO & Domain Registry</p>
+    <h1>Inspire Web Spaces Portal</h1>
+    <p class="subtitle">SSO & Web Space Registry</p>
     <p class="description">
-      Welcome to the Jubilee Internet Portal. This is the central authentication
-      and domain registration service for the Jubilee ecosystem, including
+      Welcome to Inspire Web Spaces. This is the central authentication
+      and web space registration service for the Jubilee ecosystem, including
       Jubilee Browser, Jubilee Bible, and JubileeVerse.
     </p>
     <div class="links">
@@ -147,16 +147,16 @@ async function main(): Promise<void> {
   // API info
   app.get('/api', (c) => {
     return c.json({
-      name: 'Jubilee Internet Portal API',
+      name: 'Inspire Web Spaces API',
       version: '0.1.0',
-      description: 'SSO Portal & Domain Registry for Jubilee Internet',
+      description: 'SSO Portal & Web Space Registry for Inspire Web Spaces',
       endpoints: {
         domains: '/api/domains',
         tlds: '/api/domains/tlds',
         health: '/health',
       },
-      documentation: 'https://jubileeinternet.com/docs/api',
-      note: 'This domain registry operates within the Jubilee Internet namespace only. Domains registered here do not exist on the public Internet/ICANN DNS.',
+      documentation: 'https://inspirewebspaces.com/docs/api',
+      note: 'This web space registry operates within the Jubilee Private Internet namespace only. Web spaces registered here do not exist on the public Internet/ICANN DNS.',
     });
   });
 
@@ -177,7 +177,7 @@ async function main(): Promise<void> {
     hostname: config.HOST,
   });
 
-  console.log(`Jubilee Website Backend running on http://${config.HOST}:${config.PORT}`);
+  console.log(`Inspire Web Spaces Backend running on http://${config.HOST}:${config.PORT}`);
 
   // Graceful shutdown
   const shutdown = async (signal: string): Promise<void> => {

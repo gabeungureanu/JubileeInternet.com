@@ -73,7 +73,7 @@ export function HeaderNav() {
                 <Globe className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-bold text-gray-900 hidden sm:block">
-                Jubilee<span className="text-jubilee-600">Internet</span>
+                Inspire<span className="text-jubilee-600">WebSpaces</span>
               </span>
             </Link>
 

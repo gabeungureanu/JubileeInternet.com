@@ -5,9 +5,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Jubilee Private Internet - SSO & Inspire Web Spaces',
-  description: 'The Jubilee Private Internet (JPI) - A faith-aligned, private internet architecture for trust, safety, and purpose. Register your Inspire Web Space today.',
-  keywords: ['Jubilee Private Internet', 'JPI', 'Inspire Web Spaces', 'Jubilee Browser', 'Faith-Based Internet', 'Worldwide Bible Web'],
+  title: 'Inspire Web Spaces - SSO & Private Web Space Registry',
+  description: 'Inspire Web Spaces - A faith-aligned, private internet architecture for trust, safety, and purpose. Register your Inspire Web Space today.',
+  keywords: ['Inspire Web Spaces', 'IWS', 'Jubilee Private Internet', 'JPI', 'Jubilee Browser', 'Faith-Based Internet', 'Worldwide Bible Web'],
 };
 
 export default function RootLayout({

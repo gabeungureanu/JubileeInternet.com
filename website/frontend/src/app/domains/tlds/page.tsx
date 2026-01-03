@@ -23,7 +23,7 @@ const WEB_SPACES: WebSpaceCategory[] = [
   {
     name: 'Core',
     icon: <Sparkles className="h-5 w-5" />,
-    description: 'Foundation web spaces for the Jubilee Private Internet',
+    description: 'Foundation web spaces for Inspire Web Spaces',
     spaces: [
       { space: '.inspire', shortcut: '.insp', description: 'Official Jubilee spaces', restricted: true },
       { space: '.jubilee', shortcut: '.jubi', description: 'Jubilee official spaces', restricted: true },
@@ -219,11 +219,11 @@ export default function TldsPage() {
             All Inspire Web Spaces
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-4">
-            Browse all {totalSpaces} available web spaces on the Jubilee Private Internet.
+            Browse all {totalSpaces} available web spaces on Inspire Web Spaces.
             Each web space provides a unique namespace for faith-based communities.
           </p>
           <p className="text-sm text-gray-500 max-w-xl mx-auto">
-            All web spaces start at just <span className="font-semibold text-jubilee-600">$3/year</span> and are accessible exclusively through the Jubilee Browser.
+            All web spaces start at just <span className="font-semibold text-jubilee-600">$3/year</span> and are accessible exclusively through Jubilee Browser.
           </p>
         </div>
 
@@ -310,7 +310,7 @@ export default function TldsPage() {
           <div className="bg-gradient-to-r from-jubilee-600 to-jubilee-700 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-2">Ready to claim your web space?</h3>
             <p className="text-jubilee-100 mb-6 max-w-lg mx-auto">
-              Join the Worldwide Bible Web and establish your presence on the Jubilee Private Internet.
+              Join the Worldwide Bible Web and establish your presence on Inspire Web Spaces.
             </p>
             <Link
               href="/domains"
@@ -331,8 +331,8 @@ export default function TldsPage() {
             <div>
               <h4 className="font-semibold text-gray-900 mb-1">About Inspire Web Spaces</h4>
               <p className="text-sm text-gray-600">
-                Inspire Web Spaces are private addressing constructs that exist exclusively within the Jubilee Private Internet.
-                They are not public DNS domains and are accessible only through the Jubilee Browser using the <code className="bg-gray-200 px-1.5 py-0.5 rounded text-jubilee-700 font-mono text-xs">inspire://</code> protocol.
+                Inspire Web Spaces are private addressing constructs that exist exclusively within Inspire Web Spaces.
+                They are not public DNS domains and are accessible only through Jubilee Browser using the <code className="bg-gray-200 px-1.5 py-0.5 rounded text-jubilee-700 font-mono text-xs">inspire://</code> protocol.
                 This ensures a safe, faith-aligned digital environment separate from the public internet.
               </p>
             </div>

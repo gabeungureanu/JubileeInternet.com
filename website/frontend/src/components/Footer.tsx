@@ -16,7 +16,7 @@ export function Footer() {
                 <Globe className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-bold text-white">
-                Jubilee<span className="text-jubilee-400">Internet</span>
+                Inspire<span className="text-jubilee-400">WebSpaces</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">

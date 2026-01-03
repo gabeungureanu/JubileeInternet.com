@@ -92,7 +92,7 @@ export async function createDomainPayment(input: CreatePaymentInput): Promise<Pa
             currency: 'usd',
             product_data: {
               name: `Domain Registration: ${domain.fullDomain}`,
-              description: `${input.years} year${input.years > 1 ? 's' : ''} registration for ${domain.fullDomain} on Jubilee Internet`,
+              description: `${input.years} year${input.years > 1 ? 's' : ''} registration for ${domain.fullDomain} on Inspire Web Spaces`,
             },
             unit_amount: input.amount,
           },

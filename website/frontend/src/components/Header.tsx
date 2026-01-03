@@ -26,7 +26,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <Globe className="h-8 w-8 text-jubilee-600" />
             <span className="text-xl font-bold text-gray-900">
-              Jubilee<span className="text-jubilee-600">Internet</span>
+              Inspire<span className="text-jubilee-600">WebSpaces</span>
             </span>
           </Link>
 
